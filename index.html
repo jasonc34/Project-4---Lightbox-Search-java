@@ -1,0 +1,95 @@
+<!DOCYTPE HTML>
+<htlm lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Degree Project 5</title>
+    
+    <link rel="stylesheet" href="fancy/source/jquery.fancybox.css" type="text/css" media="screen" />
+   
+    <link rel="stylesheet"  href="fancy/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+   
+    <link rel="stylesheet" href="fancy/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+
+    
+    <link rel="stylesheet" href="CSS/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="searchAndToggleBoxes" id="search-form">
+        <input id="search-input" type="search" name="s" placeholder="Search..." class="searchbox" onkeyup="search(this.value)">
+      </form>
+               
+      <div class="primary">
+        <div class="gallery">
+          <a href="Photos/01.jpg" class="fancybox" title="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="Photos/Thumbnails/01.jpg" alt="Hay Bales" title="Hay Bales"></a>
+        </div>
+        <div class="gallery">
+          <a href="Photos/02.jpg" class="fancybox" title="The lake was so calm today. We had a great view of the snow on the mountains from here."><img src="Photos/Thumbnails/02.jpg" alt="Lake" title="Lake"></a>
+        </div>
+        <div class="gallery">
+          <a href="Photos/03.jpg" class="fancybox" title="I hiked to the top of the mountain and got this picture of the canyon and trees below."><img src="Photos/Thumbnails/03.jpg" alt="Canyon" title="Canyon"></a>
+        </div>
+        <div class="gallery">
+          <a href="Photos/04.jpg" class="fancybox" title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."><img src="Photos/Thumbnails/04.jpg" alt="Iceberg" title="Iceberg"></a>
+        </div>
+        <div class="gallery">
+          <a href="Photos/05.jpg" class="fancybox" title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img src="Photos/Thumbnails/05.jpg" alt="Desert" title="Desert"></a>
+        </div>
+        <div class="gallery">
+          <a href="Photos/06.jpg" class="fancybox" title="Fall is coming, I love when the leaves on the trees start to change color."><img src="Photos/Thumbnails/06.jpg" alt="Fall" title="Fall"></a>
+        </div>
+        <div class="gallery">
+          <a href="Photos/07.jpg" class="fancybox" title="I drove past this plantation yesterday, everything is so green!"><img src="Photos/Thumbnails/07.jpg" alt="Plantation" title="Plantation"></a>
+        </div>
+        <div class="gallery">
+          <a href="Photos/08.jpg" class="fancybox" title="My summer vacation to the Oregon Coast. I love the sandy dunes!"><img src="Photos/Thumbnails/08.jpg" alt="Dunes" title="Dunes"></a>
+        </div>
+        <div class="gallery">
+          <a href="Photos/09.jpg" class="fancybox" title="We enjoyed a quiet stroll down this countryside lane."><img src="Photos/Thumbnails/09.jpg" alt="Countryside Lane" title="Countryside Lane"></a>
+        </div>
+        <div class="gallery">
+          <a href="Photos/10.jpg" class="fancybox" title="Sunset at the coast! The sky turned a lovely shade of orange."><img src="Photos/Thumbnails/10.jpg" alt="Sunset" title="Sunset"></a>
+        </div>
+        <div class="gallery">
+          <a href="Photos/11.jpg" class="fancybox" title="I did a tour of a cave today and the view of the landscape below was breathtaking."><img src="Photos/Thumbnails/11.jpg" alt="Cave" title="Cave"></a>
+        </div>
+        <div class="gallery">
+          <a href="Photos/12.jpg" class="fancybox" title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img src="Photos/Thumbnails/12.jpg" alt="Bluebells" title="Bluebells"></a>
+        </div>       
+      </div>
+    </div>
+   
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <script type="text/javascript" src="fancy/lib/jquery.mousewheel-3.0.6.pack.js">   </script>
+    
+    <script type="text/javascript" src="fancy/source/jquery.fancybox.pack.js"></script>
+    
+    <script type="text/javascript" src="/fancy/source/helpers/jquery.fancybox-buttons.js"></script>
+    
+    <script type="text/javascript" src="fancy/source/helpers/jquery.fancybox-media.js"></script>
+   
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <script src="jquery/main.js"></script>
+    
+    <script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+    </script>
+   
+    <script>
+    $(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        nextEffect  : 'none',
+        prevEffect  : 'none',
+        padding     : 0,
+        margin      : [20, 60, 20, 60] // Increase left/right margin
+    });
+    </script>
+   </body>
+</htlm>
